@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       server_url:
-        description: "Server URL (example: http://192.168.12.41:3000) - optional"
+        description: "Server URL (example: http://192.168.12.40:3000) - optional"
         required: false
         default: ""
 
@@ -249,8 +249,6 @@ jobs:
         with:
           distribution: temurin
           java-version: "17"
-
-      - uses: android-actions/setup-android@v3
 
       - uses: gradle/actions/setup-gradle@v4
         with:
